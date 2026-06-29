@@ -35,6 +35,7 @@ class Settings(BaseSettings):
     # API
     api_v1_prefix: str = "/api/v1"
     project_name: str = "Freelance Management API"
+    enable_admin_api: bool = True
 
     # Email (optional)
     smtp_host: Optional[str] = None

@@ -1700,4 +1700,5 @@ def create_app() -> gr.Blocks:
 
 
 if __name__ == "__main__":
-    create_app().launch(server_name="0.0.0.0", server_port=7860)
+    server_port = int(os.getenv("PORT", "7860"))
+    create_app().launch(server_name="0.0.0.0", server_port=server_port)

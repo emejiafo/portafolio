@@ -51,7 +51,8 @@ from app.api.public.router import public_router
 app.include_router(public_router, prefix="/api/public", tags=["Public"])
 
 # API v1 (post-cleanup, no hour-tracker routes)
-app.include_router(api_router, prefix="/api/v1", tags=["Admin API"])
+if settings.enable_admin_api:
+    app.include_router(api_router, prefix="/api/v1", tags=["Admin API"])
 
 
 @app.get("/health")

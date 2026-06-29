@@ -67,6 +67,12 @@ docker-compose exec backend pytest tests/test_public_api_smoke.py tests/test_pub
 
 See [plan.md](plan.md) for transition phases and implementation details.
 
+## Deploy To GCP
+
+Use the Cloud Run + Cloud SQL deployment guide in:
+
+- [deploy/gcp/README.md](deploy/gcp/README.md)
+
 ## License
 
 Private - All rights reserved
