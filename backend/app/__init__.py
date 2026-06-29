@@ -1,0 +1,3 @@
+"""
+Freelance Management Backend Application
+"""
